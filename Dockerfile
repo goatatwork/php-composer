@@ -48,6 +48,4 @@ USER www-data
 
 WORKDIR /var/www/html
 
-RUN composer global require laravel/installer
-
-ENTRYPOINT ["/var/www/.composer/vendor/bin/laravel"]
+ENTRYPOINT ["/usr/bin/composer"]
